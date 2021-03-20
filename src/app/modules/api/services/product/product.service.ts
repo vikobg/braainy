@@ -12,7 +12,7 @@ export class ProductService {
 
   constructor(private http: HttpClient) {}
 
-  getAll(): Observable<GetProductsResponse> {
+  getAll(page: number, size: number): Observable<GetProductsResponse> {
     return this.http.get<GetProductsResponse>(this.productsEndpoint());
   }
 
