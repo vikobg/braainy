@@ -8,7 +8,7 @@ import {SharedModule} from "./modules/shared/shared.module";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
