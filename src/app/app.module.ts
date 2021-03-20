@@ -8,6 +8,7 @@ import {SharedModule} from "./modules/shared/shared.module";
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
 import {HttpClientModule} from "@angular/common/http";
+import {ApiModule} from "./modules/api/api.module";
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {HttpClientModule} from "@angular/common/http";
     SharedModule,
     StoreModule.forRoot({}, {}),
     EffectsModule.forRoot([]),
-    HttpClientModule
+    HttpClientModule,
+    ApiModule
   ],
   providers: [],
   bootstrap: [AppComponent]
